@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="10"
+		android:orientation="horizontal" android:background="@drawable/head">
+		<ImageButton android:src="@drawable/searchbtn"
+			android:background="#00000000" android:layout_gravity="center"
+			android:layout_margin="5dp" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1.5"
+			android:scaleType="fitXY" />
+		<TextView android:layout_margin="5dp" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:layout_weight="1" android:textSize="20dp" android:textColor="@android:color/white"
+			android:text="@string/JjgkActivity_Jjgk_ActivityLabel" />
+		<ImageButton android:src="@drawable/addselfbtn"
+			android:background="#00000000" android:layout_gravity="center"
+			android:layout_margin="5dp" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1.5"
+			android:scaleType="fitXY" />
+	</LinearLayout>
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="1">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical">
+			
+			<!-- 基金代码 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_dm_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp" 
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_dm_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_dm_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+            	
+			
+			<!-- 基金名称 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_jjmc_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_jjmc_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_jjmc_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" 
+					 android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+			
+			<!-- 基金简称 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_jjjc_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_jjjc_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_jjjc_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" 
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+			
+			<!-- 拼音简称 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_pyjc_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_pyjc_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_pyjc_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+
+			<!-- 基金类型 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_jjlx_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_jjlx_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_jjlx_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+
+			<!-- 基金管理人 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_jjglr_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_jjglr_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_jjglr_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+			
+			<!-- 基金托管人 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_jjtgr_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_jjtgr_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_jjtgr_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" 
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+			
+			<!-- 管理费率 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_glfl_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_glfl_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_glfl_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+			
+			<!-- 托管费率 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_tgfl_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_tgfl_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_tgfl_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+			
+			<!-- 投资类型 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_tzlx_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_tzlx_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_tzlx_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+            	
+            <!-- 成立日期 -->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_clrq_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_clrq_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_clrq_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+            	
+           <!-- 开放申购起始日-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_kfsgqsr_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_kfsgqsr_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_kfsgqsr_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+            	
+           <!-- 开放赎回起始日-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_kfshqsr_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_kfshqsr_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_kfshqsr_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+			
+			<!-- 单笔申购金额下限-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_dbsgjexx_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_dbsgjexx_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_dbsgjexx_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+			
+			<!-- 单笔赎回份额下限-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_dbshfexx_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_dbshfexx_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_dbshfexx_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+            	
+            <!-- 投资风格-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_tzfg_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_tzfg_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_tzfg_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" /> 
+            	
+            <!-- 投资目标-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_tzmb_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_tzmb_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_tzmb_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+			
+			<!-- 投资范围-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_tzfw_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textColor="#FFD700" android:textSize="20dp"		
+					android:text="@string/JjgkActivity_tzfw_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_tzfw_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					 android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+			
+			<!-- 巨额赎回比例认定-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_jeshblrd_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_jeshblrd_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_jeshblrd_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            	
+            <!-- 巨额赎回条款-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_jeshtk_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_jeshtk_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_jeshtk_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            	
+            <!-- 市场风险提示-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_scfxts_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_scfxts_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_scfxts_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            	
+            <!-- 管理风险提示-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_glfxts_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_glfxts_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_glfxts_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            	
+            <!-- 技术风险提示-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_jsfxts_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_jsfxts_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_jsfxts_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            	
+            <!-- 费率提取标准-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_fltqbz_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_fltqbz_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_fltqbz_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            	
+            <!-- 基金发起人-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_jjfqr_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_jjfqr_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_jjfqr_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            	
+            <!-- 销售代理人-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_xsdlr_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_xsdlr_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_xsdlr_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            	
+           	<!-- 投资策略-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_tzcl_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_tzcl_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_tzcl_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            	
+            <!-- 基金终止条款-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_jjzztk_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_jjzztk_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_jjzztk_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            	
+            <!-- 业绩比较基准-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_yjbjjz_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_yjbjjz_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_yjbjjz_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            	
+            <!-- 申购状态-->
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<TextView android:id="@+id/Jjgk_sgzt_Key"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left" android:textSize="20dp"
+					android:textColor="#FFD700"
+					android:text="@string/JjgkActivity_sgzt_Key_TextView" />
+				<TextView android:id="@+id/Jjgk_sgzt_Value"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="left"
+					android:textSize="20dp" />
+
+			</LinearLayout>
+			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px" 
+  				android:layout_margin="2px" 
+            	android:background="#6A5ACD" />
+            
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

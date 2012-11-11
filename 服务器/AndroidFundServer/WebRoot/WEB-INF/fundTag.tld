@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+<tlibversion>1.2</tlibversion>             <!-- 标签库版本 -->
+<jspversion>1.1</jspversion>				<!-- Jsp版本 -->
+<shortname>fundTag</shortname>					<!--  -->
+<uri>http://chenjun.com/fundTags</uri>     <!-- 最重要，Jsp中导入的唯一标识符 -->
+
+<tag>
+	<name>array</name>
+	<tagclass>com.chenjun.fund.tags.ArrayTag</tagclass>
+</tag>
+
+<tag>
+	<name>jjjzs</name>
+	<tagclass>com.chenjun.fund.tags.JjjzsTag</tagclass>
+</tag>
+
+<tag>
+	<name>jjgk</name>
+	<tagclass>com.chenjun.fund.tags.JjgkTag</tagclass>
+</tag>
+
+<tag>
+	<name>jjfhs</name>
+	<tagclass>com.chenjun.fund.tags.JjfhsTag</tagclass>
+</tag>
+
+<tag>
+	<name>jjcfs</name>
+	<tagclass>com.chenjun.fund.tags.JjcfsTag</tagclass>
+</tag>
+
+<tag>
+	<name>jjgs</name>
+	<tagclass>com.chenjun.fund.tags.JjgsTag</tagclass>
+</tag>
+
+<tag>
+	<name>jjBaseInfos</name>
+	<tagclass>com.chenjun.fund.tags.JjBaseInfosTag</tagclass>
+</tag>
+</taglib>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    
+    <!-- 第几次拆分 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjcf_count" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:textSize="25dp" android:textColor="#0000CD"
+			/>
+	</LinearLayout>
+	
+	<!-- 公告日期 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjcf_ggrq_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_ggrq_Key_TextView" />
+		<TextView android:id="@+id/Jjcf_ggrq_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<!-- 拆分日期 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjcf_cfrq_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_ggrq_Key_TextView" />
+		<TextView android:id="@+id/Jjcf_cfrq_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<!-- 拆分前净值 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjcf_cfqjz_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_ggrq_Key_TextView" />
+		<TextView android:id="@+id/Jjcf_cfqjz_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<!-- 拆分后净值 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjcf_cfhjz_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_ggrq_Key_TextView" />
+		<TextView android:id="@+id/Jjcf_cfhjz_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<!-- 拆分比例 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjcf_cfbl_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_ggrq_Key_TextView" />
+		<TextView android:id="@+id/Jjcf_cfbl_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+    
+</LinearLayout>

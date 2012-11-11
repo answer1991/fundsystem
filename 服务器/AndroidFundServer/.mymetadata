@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="AndroidFundServer"
+  id="myeclipse.1325594822133"
+  context-root="/AndroidFundServer"
+  j2ee-spec="5.0"
+  archive="AndroidFundServer.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

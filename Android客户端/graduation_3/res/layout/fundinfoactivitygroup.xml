@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:orientation="vertical"
+    android:layout_height="fill_parent">
+    
+    <!-- 中间动态加载View -->
+    <LinearLayout android:measureAllChildren="true" android:id="@+id/containerBody"
+        android:layout_weight="1" android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        >
+    </LinearLayout>
+    
+    <!-- 
+    <HorizontalScrollView 
+    	android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:layout_weight="9" android:scrollbars="none"> -->
+    <LinearLayout background="@drawable/head"
+        android:layout_gravity="bottom" android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:layout_weight="9"
+        >
+        
+        <!-- 功能模块按钮1 基金净值走势 -->
+        <ImageButton android:id="@+id/FundInfo_Jjjzs_Btn"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:src="@drawable/jjzs"
+            android:background="#00000000" android:layout_gravity="center"
+            android:layout_weight="1" android:scaleType="fitXY"/>
+            
+        <!-- 功能模块按钮2 基金概况 -->
+        <ImageButton android:id="@+id/FundInfo_Jjgk_Btn"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:src="@drawable/jjgk"
+            android:background="#00000000" android:layout_gravity="center"
+            android:layout_weight="1" android:scaleType="fitXY"/>
+            
+        <!-- 功能模块按钮3 基金分红-->
+        <ImageButton android:id="@+id/FundInfo_Jjfh_Btn"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:src="@drawable/jjfh"
+            android:background="#00000000" android:layout_gravity="center"
+            android:layout_weight="1" android:scaleType="fitXY"/>
+            
+        <!-- 功能模块按钮4 基金拆分-->
+        <ImageButton android:id="@+id/FundInfo_Jjcf_Btn"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:src="@drawable/jjcf"
+            android:background="#00000000" android:layout_gravity="center"
+            android:layout_weight="1" android:scaleType="fitXY"/>
+            
+       <!-- 功能模块按钮5 基金公司 -->
+       <ImageButton android:id="@+id/FundInfo_Jjgs_Btn"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:src="@drawable/jjjl"
+            android:background="#00000000" android:layout_gravity="center"
+            android:layout_weight="1" android:scaleType="fitXY"/>
+            
+    </LinearLayout>
+    <!-- </HorizontalScrollView> -->
+</LinearLayout>

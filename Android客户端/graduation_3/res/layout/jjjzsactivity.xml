@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  	<!-- 导航信息 -->
+  	<LinearLayout android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:layout_weight="10"
+  		android:orientation="horizontal"
+  		android:background="@drawable/head"
+  	>
+  		<ImageButton android:id="@+id/searchBtn" android:src="@drawable/searchbtn"
+  			android:background="#00000000" android:layout_gravity="center"
+  			android:layout_margin="5dp" android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_weight="1.5" 
+            android:scaleType="fitXY"/>
+        <TextView android:layout_margin="5dp" 
+        	android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:gravity="center"
+            android:layout_weight="1" 
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:text="@string/jzHistory_ActivityLabel"/>
+       <ImageButton android:id="@+id/addToSelf" android:src="@drawable/addselfbtn"
+  			android:background="#00000000" android:layout_gravity="center"
+  			android:layout_margin="5dp" android:layout_width="fill_parent"
+             android:layout_height="fill_parent" android:layout_weight="1.5" 
+             android:scaleType="fitXY"/>   
+  	</LinearLayout>
+  	
+  	<!-- 内容 -->
+  	<LinearLayout android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:layout_weight="1"
+  		android:orientation="vertical">
+  		
+  		<!-- 基金基本信息和按钮 -->
+  		<LinearLayout android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:layout_weight="3"
+  		android:orientation="vertical"
+  		>
+  			<!--  基金基本信息 -->
+  			<LinearLayout android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:layout_margin="2dp"
+  				android:orientation="vertical"
+  				android:layout_weight="1"
+  				android:background="@android:color/black"
+  			>
+  				<!-- 基金名称，净值 -->
+  				<LinearLayout android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:orientation="horizontal"
+  				android:layout_weight="1"
+  				>
+  					<TextView android:id="@+id/JjjzsActivity_jjNameTextView"
+  					android:layout_width="fill_parent"
+  					android:layout_height="fill_parent"
+  					android:layout_weight="1"
+  					android:textSize="25dp"
+  					android:singleLine="true"
+  					android:gravity="left|center_vertical"
+  					/>
+  					<TextView android:id="@+id/JjjzsActivity_jjjzTextView"
+  					android:layout_width="fill_parent"
+  					android:layout_height="fill_parent"
+  					android:layout_weight="1"
+  					android:textSize="15dp"
+  					android:gravity="right|center_vertical"
+  					/>
+  				</LinearLayout>
+  				
+  				<!-- 基金代码，涨跌幅 -->
+  				<LinearLayout android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:orientation="horizontal"
+  				android:layout_weight="2"
+  				>
+  					<TextView android:id="@+id/JjjzsActivity_jjdmTextView"
+  					android:layout_width="fill_parent"
+  					android:layout_height="fill_parent"
+  					android:layout_weight="1"
+  					android:textSize="13dp"
+  					android:gravity="left|center_vertical"
+  					android:text="000021"/>
+  					<TextView android:id="@+id/JjjzsActivity_jjjzDateTextView"
+  					android:layout_width="fill_parent"
+  					android:layout_height="fill_parent"
+  					android:textSize="13dp"
+  					android:layout_weight="1"
+  					android:gravity="left|center_vertical"
+  					/>
+  					<TextView android:id="@+id/JjjzsActivity_jzIncreaseTextView"
+  					android:layout_width="fill_parent"
+  					android:layout_height="fill_parent"
+  					android:textSize="13dp"
+  					android:layout_weight="1"
+  					android:gravity="right|center_vertical"
+  					/>
+  				</LinearLayout>
+  			</LinearLayout>
+  			
+  			<!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px"  
+            	android:background="@android:color/darker_gray" /> 
+            	
+  			<!-- 选择查看历史天数的按钮 -->	
+		    <LinearLayout 
+		        android:layout_gravity="bottom" android:orientation="horizontal"
+		        android:layout_width="fill_parent" android:layout_height="fill_parent"
+		        android:layout_marginTop="2dp"
+				android:layout_weight="1.5"
+		        >
+				<!-- 功能模块按钮1 -->
+				 <ImageButton android:id="@+id/tenDayBtn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent" android:src="@drawable/tendaybtn"
+		            android:background="#00000000" android:layout_gravity="center"
+		            android:layout_weight="1" android:scaleType="fitXY"/>
+       			<ImageButton android:id="@+id/monthBtn"
+		            android:layout_marginLeft="2dp" android:layout_width="wrap_content"
+		            android:layout_height="fill_parent" android:src="@drawable/monthbtn"
+		            android:background="#00000000" android:layout_gravity="center"
+		            android:layout_weight="1" android:scaleType="fitXY"/>
+		        <!-- 功能模块按钮1 -->
+       			<ImageButton android:id="@+id/quarterBtn"
+		            android:layout_marginLeft="2dp" android:layout_width="wrap_content"
+		            android:layout_height="fill_parent" android:src="@drawable/quarterbtn"
+		            android:background="#00000000" android:layout_gravity="center"
+		            android:layout_weight="1" android:scaleType="fitXY"/>
+		         <!-- 功能模块按钮1 -->
+       			<ImageButton android:id="@+id/halfYearBtn"
+		            android:layout_marginLeft="2dp" android:layout_width="wrap_content"
+		            android:layout_height="fill_parent" android:src="@drawable/halfyearbtn"
+		            android:background="#00000000" android:layout_gravity="center"
+		            android:layout_weight="1" android:scaleType="fitXY"/>
+		        <!-- 功能模块按钮1 -->
+       			<ImageButton android:id="@+id/yearBtn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent" android:src="@drawable/yearbtn"
+		            android:background="#00000000" android:layout_gravity="center"
+		            android:layout_weight="1" android:scaleType="fitXY"/>
+		    </LinearLayout>
+		  
+		  <!-- 水平分割线 -->
+  			<View android:layout_width="fill_parent" android:layout_height="1px"  
+            	android:background="@android:color/darker_gray" /> 
+		  
+  		</LinearLayout>
+  		
+  		<!-- 统计区，分为走势图和统计表 -->
+  		<LinearLayout android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:orientation="vertical"
+	  			android:layout_weight="1"
+  		>
+  			<!-- 走势图 -->
+  			<com.chenjun.view.JjjzsChart
+			   	android:id="@+id/chart"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    />
+			 <View android:layout_width="fill_parent" android:layout_height="1px"  
+            	android:background="@android:color/darker_gray" />  
+            	
+			 <!-- 区间统计 -->
+			 <LinearLayout android:layout_width="fill_parent"
+			  	android:layout_height="fill_parent"
+			  	android:orientation="vertical"
+			  	android:layout_weight="3"
+			  	android:background="@android:color/black"
+			  >
+			  	<!-- 起始日期 -->
+			  	<LinearLayout android:layout_width="fill_parent"
+			  	android:layout_height="fill_parent"
+			  	android:orientation="horizontal"
+			  	android:layout_weight="1">
+			  		<TextView android:id="@+id/startTimeKey"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		android:text="@string/startDate_Key_TextView"/>
+			  		<TextView android:id="@+id/startTimeValue"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		/>
+			  		<TextView android:id="@+id/startJzKey"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		android:text="@string/startJz_Key_TextView"/>
+			  		<TextView android:id="@+id/startJzValue"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		/>
+			  	</LinearLayout>
+			  	<!-- 终止日期 -->
+			  	<LinearLayout android:layout_width="fill_parent"
+			  	android:layout_height="fill_parent"
+			  	android:orientation="horizontal"
+			  	android:layout_weight="1">
+			  		<TextView android:id="@+id/endTimeKey"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		android:text="@string/endDate_Key_TextView"/>
+			  		<TextView android:id="@+id/endTimeValue"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		/>
+			  		<TextView android:id="@+id/endJzKey"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		android:text="@string/endJz_Key_TextView"/>
+			  		<TextView android:id="@+id/endJzValue"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		/>
+			  	</LinearLayout>
+			  	<!-- 涨跌幅统计 -->
+			  	<LinearLayout android:layout_width="fill_parent"
+			  	android:layout_height="fill_parent"
+			  	android:orientation="horizontal"
+			  	android:layout_weight="1">
+			  		<TextView android:id="@+id/increaseNumKey"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		android:text="@string/increase_Key_TextView"/>
+			  		<TextView android:id="@+id/increaseNumValue"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		/>
+			  		<TextView android:id="@+id/increasePercentKey"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		android:text="@string/increasePrecent_Key_TextView"/>
+			  		<TextView android:id="@+id/increasePercentValue"
+			  		android:layout_width="fill_parent"
+			  		android:layout_height="fill_parent"
+			  		android:gravity="center"
+			  		android:layout_weight="1"
+			  		/>
+			  	</LinearLayout>
+			 </LinearLayout>
+			 <View android:layout_width="fill_parent" android:layout_height="1px"  
+            	android:background="@android:color/darker_gray" /> 
+		</LinearLayout>
+  	</LinearLayout>
+</LinearLayout>

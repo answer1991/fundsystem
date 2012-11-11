@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<!-- 第几次分红 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjfh_count" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:textSize="25dp" android:textColor="#0000CD"
+			/>
+	</LinearLayout>
+	
+	<!-- 公告日期 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjfh_ggrq_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_ggrq_Key_TextView" />
+		<TextView android:id="@+id/Jjfh_ggrq_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<!-- 单位分红 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjfh_dwfh_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_dwfh_Key_TextView" />
+		<TextView android:id="@+id/Jjfh_dwfh_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<!-- 股权登记日 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjfh_gqdjr_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_gqdjr_Key_TextView" />
+		<TextView android:id="@+id/Jjfh_gqdjr_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<!-- 除息日 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjfh_cxr_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_cxr_Key_TextView" />
+		<TextView android:id="@+id/Jjfh_cxr_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<!-- 派息日 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjfh_pxr_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_pxr_Key_TextView" />
+		<TextView android:id="@+id/Jjfh_pxr_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<!-- 红利再投日 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjfh_ztr_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_ztr_Key_TextView" />
+		<TextView android:id="@+id/Jjfh_ztr_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<!-- 基金份额基数 -->
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:id="@+id/Jjfh_jjfejs_Key" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="20dp" android:textColor="#FFD700"
+			android:layout_weight="1"
+			android:text="@string/JjfhActivity_jjfejs_Key_TextView" />
+		<TextView android:id="@+id/Jjfh_jjfejs_Value"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="left" android:textSize="20dp" 
+			android:layout_weight="1"/>
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="50dip"
+		android:layout_weight="2">
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1">
+			<!-- 基金名称 -->
+			<TextView android:id="@+id/FundBaseInfo_element_Jjjc"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:gravity="center|left" android:singleLine="true" android:textSize="15dp"
+				android:textColor="#FFD700" android:layout_weight="1"></TextView>
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="2">
+
+			<!-- 基金代码 -->
+			<TextView android:id="@+id/FundBaseInfo_element_Jjdm"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:gravity="center|left" android:singleLine="true" android:textSize="10dp"
+				android:textColor="#FFD700" android:layout_weight="1"></TextView>
+
+			
+		</LinearLayout>
+
+	</LinearLayout>
+	
+		<com.chenjun.view.SyncHorizontalScrollView android:orientation="horizontal" android:id="@+id/fundbaseinfo_list_item_scrollView"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1" android:scrollbars="none"
+			android:fillViewport="true">
+			-->
+			
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1"
+			>
+			
+			<!-- 投资类型-->
+			<TextView android:id="@+id/FundBaseInfo_element_Tzlx"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				 android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+			
+			
+			<!-- 日期 -->
+			<TextView android:id="@+id/FundBaseInfo_element_Rq"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+
+			<!-- 基金净值 -->
+			<TextView android:id="@+id/FundBaseInfo_element_Jjjz"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+
+			<!-- 涨跌 -->
+			<TextView android:id="@+id/FundBaseInfo_element_Increase"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 累计净值 -->
+			<TextView android:id="@+id/FundBaseInfo_element_Ljjz"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 涨跌幅-->
+			<TextView android:id="@+id/FundBaseInfo_element_IncreasePrecent"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 同类型排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_Tlxpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 总排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_Zpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 上期日期-->
+			<TextView android:id="@+id/FundBaseInfo_element_Sqrq"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 上期净值-->
+			<TextView android:id="@+id/FundBaseInfo_element_Sqjz"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 上期累计净值-->
+			<TextView android:id="@+id/FundBaseInfo_element_Sqljjz"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 周涨幅-->
+			<TextView android:id="@+id/FundBaseInfo_element_zzf"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+			
+			<!-- 周涨幅同类型排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_zzftlxpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 周涨幅总排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_zzfzpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 月涨幅-->
+			<TextView android:id="@+id/FundBaseInfo_element_yzf"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+			
+			<!-- 月涨幅同类型排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_yzftlxpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 月涨幅总排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_yzfzpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 季度涨幅-->
+			<TextView android:id="@+id/FundBaseInfo_element_jdzf"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+			
+			<!-- 季度涨幅同类型排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_jdzftlxpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 季度涨幅总排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_jdzfzpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 半年涨幅-->
+			<TextView android:id="@+id/FundBaseInfo_element_bnzf"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+			
+			<!-- 半年涨幅同类型排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_bnzftlxpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 半年涨幅总排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_bnzfzpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 年涨幅-->
+			<TextView android:id="@+id/FundBaseInfo_element_nzf"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+			
+			<!-- 年涨幅同类型排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_nzftlxpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 年涨幅总排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_nzfzpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 今年涨幅-->
+			<TextView android:id="@+id/FundBaseInfo_element_jnzf"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+			
+			<!-- 今年涨幅同类型排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_jnzftlxpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 今年涨幅总排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_jnzfzpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 两年涨幅-->
+			<TextView android:id="@+id/FundBaseInfo_element_lnzf"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+			
+			<!-- 两年涨幅同类型排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_lnzftlxpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 两年涨幅总排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_lnzfzpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 三年涨幅-->
+			<TextView android:id="@+id/FundBaseInfo_element_snzf"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+			
+			<!-- 三年涨幅同类型排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_snzftlxpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 三年涨幅总排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_snzfzpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 五年涨幅-->
+			<TextView android:id="@+id/FundBaseInfo_element_wnzf"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+			
+			<!-- 五年涨幅同类型排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_wnzftlxpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+				
+			<!-- 五年涨幅总排名-->
+			<TextView android:id="@+id/FundBaseInfo_element_wnzfzpm"
+				android:layout_width="50dp" android:layout_height="fill_parent"
+				android:gravity="center" android:singleLine="true" android:textSize="10dp"
+				android:layout_weight="1"
+				android:layout_margin="2dp"></TextView>
+
+		</LinearLayout>
+		
+	</com.chenjun.view.SyncHorizontalScrollView>
+
+
+</LinearLayout>

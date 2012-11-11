@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<!-- 导航头部 -->
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="10"
+		android:orientation="horizontal" android:background="@drawable/head">
+		<TextView android:layout_margin="5dp" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:textSize="20dp" android:textColor="@android:color/white"
+			android:text="@string/SearchActivity_Search_ActivityLabel" />
+	</LinearLayout>
+
+	<!-- 内容 -->
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:layout_weight="1">
+		
+		<!--
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="left"
+			android:textSize="15dp" android:textColor="#FFD700"
+			android:text="@string/SearchActivity_HelpInfo_TextView" />
+			
+			-->
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+			<EditText android:id="@+id/SearchActivity_keyEdit"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:hint="@string/SearchActivity_Hint_EditView"
+				android:layout_weight="1" />
+
+			<Button android:id="@+id/SearchActivity_searchBtn"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="3" android:text="@string/SearchActivity_Search_Btn" />
+		</LinearLayout>
+		
+		<TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textColor="@android:color/white" android:textSize="30dp"
+			android:gravity="center"
+			android:text="搜索结果"
+		/>
+		
+		
+		<!-- 表头信息 -->
+		<LinearLayout android:background="#6A5ACD"
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_weight="2">
+				
+				<!-- 基金简称，代码 -->
+				<TextView android:text="@string/FundReportActivity_jjjcAndDm_ListHead" android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:gravity="center"
+					android:textSize="10dp"
+					android:layout_weight="1"></TextView>
+
+			</LinearLayout>
+
+			<com.chenjun.view.SyncHorizontalScrollView
+				android:orientation="horizontal" android:id="@+id/fundbaseinfo_list_head_scrollView"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_weight="1" android:scrollbars="none"
+				android:fillViewport="true">
+				-->
+
+				<LinearLayout android:orientation="horizontal"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:layout_weight="1">
+
+					<!-- 投资类型 -->
+					<TextView android:text="@string/FundReportActivity_tzlx_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1"
+						android:layout_margin="2dp"></TextView>
+
+
+					<!-- 日期 -->
+					<TextView android:text="@string/FundReportActivity_zxrq_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1"
+						android:layout_margin="2dp"></TextView>
+
+					<!-- 基金净值 -->
+					<TextView android:text="@string/FundReportActivity_zxjz_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 涨跌 -->
+					<TextView android:text="@string/FundReportActivity_rzd_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 累计净值 -->
+					<TextView android:text="@string/FundReportActivity_ljjz_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 涨跌幅 -->
+					<TextView android:text="@string/FundReportActivity_rzf_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 同类型排名 -->
+					<TextView android:text="@string/FundReportActivity_tlxpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 总排名 -->
+					<TextView android:text="@string/FundReportActivity_zpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 上期日期 -->
+					<TextView android:text="@string/FundReportActivity_sqrq_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 上期净值 -->
+					<TextView android:text="@string/FundReportActivity_sqjz_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 上期累计净值 -->
+					<TextView android:text="@string/FundReportActivity_sqljjz_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 周涨幅 -->
+					<TextView android:text="@string/FundReportActivity_zzf_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 周涨幅同类型排名 -->
+					<TextView android:text="@string/FundReportActivity_zzftlxpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 周涨幅总排名 -->
+					<TextView android:text="@string/FundReportActivity_zzfzpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 月涨幅 -->
+					<TextView android:text="@string/FundReportActivity_yzf_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 月涨幅同类型排名 -->
+					<TextView android:text="@string/FundReportActivity_yzftlxpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 月涨幅总排名 -->
+					<TextView android:text="@string/FundReportActivity_yzfzpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 季度涨幅 -->
+					<TextView android:text="@string/FundReportActivity_jdzf_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 季度涨幅同类型排名 -->
+					<TextView android:text="@string/FundReportActivity_jdzftlxpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 季度涨幅总排名 -->
+					<TextView android:text="@string/FundReportActivity_jdzfzpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 半年涨幅 -->
+					<TextView android:text="@string/FundReportActivity_bnzf_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 半年涨幅同类型排名 -->
+					<TextView android:text="@string/FundReportActivity_bnzftlxpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 半年涨幅总排名 -->
+					<TextView android:text="@string/FundReportActivity_bnzfzpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 年涨幅 -->
+					<TextView android:text="@string/FundReportActivity_ynzf_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 年涨幅同类型排名 -->
+					<TextView android:text="@string/FundReportActivity_ynzftlxpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 年涨幅总排名 -->
+					<TextView android:text="@string/FundReportActivity_ynzfzpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 今年涨幅 -->
+					<TextView android:text="@string/FundReportActivity_jnzf_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 今年涨幅同类型排名 -->
+					<TextView android:text="@string/FundReportActivity_jnzftlxpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 今年涨幅总排名 -->
+					<TextView android:text="@string/FundReportActivity_jnzfzpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 两年涨幅 -->
+					<TextView android:text="@string/FundReportActivity_lnzf_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 两年涨幅同类型排名 -->
+					<TextView android:text="@string/FundReportActivity_lnzftlxpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 两年涨幅总排名 -->
+					<TextView android:text="@string/FundReportActivity_lnzfzpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 三年涨幅 -->
+					<TextView android:text="@string/FundReportActivity_snzf_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 三年涨幅同类型排名 -->
+					<TextView android:text="@string/FundReportActivity_snzftlxpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 三年涨幅总排名 -->
+					<TextView android:text="@string/FundReportActivity_snzfzpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 五年涨幅 -->
+					<TextView android:text="@string/FundReportActivity_wnzf_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 五年涨幅同类型排名 -->
+					<TextView android:text="@string/FundReportActivity_wnzftlxpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+					<!-- 五年涨幅总排名 -->
+					<TextView android:text="@string/FundReportActivity_wnzfzpm_ListHead" android:layout_width="50dp"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textSize="10dp"
+						android:layout_weight="1" android:layout_margin="2dp"></TextView>
+
+				</LinearLayout>
+
+			</com.chenjun.view.SyncHorizontalScrollView>
+
+
+		</LinearLayout>
+
+
+
+		<ListView android:id="@+id/SearchActivity_result_list" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1">
+
+		</ListView>
+
+	</LinearLayout>
+
+</LinearLayout>

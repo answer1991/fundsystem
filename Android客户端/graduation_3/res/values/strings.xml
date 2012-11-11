@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Graduation_3Activity!</string>
+    <string name="app_name">基金投资分析</string>
+    
+    <!-- 全局变量 -->
+    <string name="Globe_Network_Error">网络错误，请检查网络</string>
+    <string name="Globe_Login_ProgressDialog">登录中，请稍后</string>
+    <string name="Globe_Report_Download_Wait_ProgressDialog">请求最新净值排名中，请稍后！</string>
+    <string name="Globe_Report_Download_Success">最新净值排名请求成功！</string>
+    
+    <!-- 基金历史走势 Activity所要用的值-->
+    <string name="jzHistory_ActivityLabel">基金历史走势</string>
+    <string name="startDate_Key_TextView">期初日期</string>
+    <string name="endDate_Key_TextView">期末日期</string>
+    <string name="startJz_Key_TextView">期初净值</string>
+    <string name="endJz_Key_TextView">期末净值</string>
+    <string name="increase_Key_TextView">期间涨跌</string>
+    <string name="increasePrecent_Key_TextView">期间涨幅</string>
+    
+    <!-- 基金概况 Activity所要用的值-->
+    <string name="JjgkActivity_Jjgk_ActivityLabel">基金概况</string>
+    <string name="JjgkActivity_dm_Key_TextView">基金代码:</string>
+    <string name="JjgkActivity_jjmc_Key_TextView">基金名称:</string>
+    <string name="JjgkActivity_jjjc_Key_TextView">基金简称:</string>
+    <string name="JjgkActivity_pyjc_Key_TextView">拼音简称:</string>
+    <string name="JjgkActivity_jjlx_Key_TextView">基金类型:</string>
+    <string name="JjgkActivity_jjglr_Key_TextView">基金管理人:</string>
+    <string name="JjgkActivity_jjtgr_Key_TextView">基金托管人:</string>
+    <string name="JjgkActivity_glfl_Key_TextView">管理费率:</string>
+    <string name="JjgkActivity_tgfl_Key_TextView">托管费率:</string>
+    <string name="JjgkActivity_tzlx_Key_TextView">投资类型:</string>
+    <string name="JjgkActivity_clrq_Key_TextView">成立日期:</string>
+    <string name="JjgkActivity_kfsgqsr_Key_TextView">开放申购起始日:</string>
+    <string name="JjgkActivity_kfshqsr_Key_TextView">开放赎回起始日:</string>
+    <string name="JjgkActivity_dbsgjexx_Key_TextView">单笔申购金额下限:</string>
+    <string name="JjgkActivity_dbshfexx_Key_TextView">单笔赎回份额下限:</string>
+    <string name="JjgkActivity_tzfg_Key_TextView">投资风格:</string>
+    <string name="JjgkActivity_tzmb_Key_TextView">投资目标:</string>
+    <string name="JjgkActivity_tzfw_Key_TextView">投资范围:</string>
+    <string name="JjgkActivity_jeshblrd_Key_TextView">巨额赎回比例认定:</string>
+    <string name="JjgkActivity_jeshtk_Key_TextView">巨额赎回条款:</string>
+    <string name="JjgkActivity_scfxts_Key_TextView">市场风险提示:</string>
+    <string name="JjgkActivity_glfxts_Key_TextView">管理风险提示:</string> 
+    <string name="JjgkActivity_jsfxts_Key_TextView">技术风险提示:</string>
+    <string name="JjgkActivity_fltqbz_Key_TextView">费率提取标准:</string>
+    <string name="JjgkActivity_jjfqr_Key_TextView">基金发起人:</string>
+    <string name="JjgkActivity_xsdlr_Key_TextView">销售代理人:</string>
+    <string name="JjgkActivity_tzcl_Key_TextView">投资策略:</string>
+    <string name="JjgkActivity_jjzztk_Key_TextView">基金终止条款:</string>
+    <string name="JjgkActivity_yjbjjz_Key_TextView">业绩比较基准:</string>
+    <string name="JjgkActivity_sgzt_Key_TextView">申购状态:</string>
+    
+    
+    <!-- 基金分红所要用到的值 -->
+    <string name="JjfhActivity_Jjfh_ActivityLabel">基金分红</string>
+    <string name="JjfhActivity_dm_Key_TextView">基金代码:</string>
+    <string name="JjfhActivity_ggrq_Key_TextView">公告日期:</string>
+    <string name="JjfhActivity_dwfh_Key_TextView">单位分红:</string>
+    <string name="JjfhActivity_gqdjr_Key_TextView">股权登记日:</string>
+    <string name="JjfhActivity_cxr_Key_TextView">除息日:</string>
+    <string name="JjfhActivity_pxr_Key_TextView">派息日:</string>
+    <string name="JjfhActivity_ztr_Key_TextView">红利再投日:</string>
+    <string name="JjfhActivity_jjfejs_Key_TextView">基金份额基数:</string>
+    <string name="JjfhActivity_noFh_HelpInfo_TextView">该基金没有分红记录!</string>
+    
+    <!-- 基金拆分所要用到的值 -->
+    <string name="JjcfActivity_Jjcf_ActivityLabel">基金拆分</string>
+    <string name="JjcfActivity_ggrq_Key_TextView">公告日期:</string>
+    <string name="JjcfActivity_cfrq_Key_TextView">拆分日期:</string>
+    <string name="JjcfActivity_cfqjz_Key_TextView">拆分前净值:</string>
+    <string name="JjcfActivity_cfhjz_Key_TextView">拆分后净值:</string>
+    <string name="JjcfActivity_cfbl_Key_TextView">拆分比例:</string>
+    <string name="JjcfActivity_noCf_HelpInfo_TextView">该基金未拆分!</string>
+    
+    <!-- 基金公司所要用到的值 -->
+    <string name="JjgsActivity_Jjgs_ActivityLabel">基金公司</string>
+    <string name="JjgsActivity_dm_Key_TextView">基金代码:</string>
+    <string name="JjgsActivity_jgmc_Key_TextView">机构名称:</string>
+    <string name="JjgsActivity_fddbr_Key_TextView">法定代表人:</string>
+    <string name="JjgsActivity_slrq_Key_TextView">设立日期:</string>
+    <string name="JjgsActivity_zczb_Key_TextView">注册资本:</string>
+    <string name="JjgsActivity_zcdz_Key_TextView">注册地址:</string>
+    <string name="JjgsActivity_zjl_Key_TextView">总经理:</string>
+    <string name="JjgsActivity_lxdh_Key_TextView">联系电话:</string>
+    <string name="JjgsActivity_lxcz_Key_TextView">联系传真:</string>
+    <string name="JjgsActivity_lxdz_Key_TextView">联系地址:</string>
+    <string name="JjgsActivity_yzbm_Key_TextView">邮政编码:</string>
+    <string name="JjgsActivity_dzyx_Key_TextView">电子邮箱:</string>
+    <string name="JjgsActivity_gswz_Key_TextView">公司网址:</string>
+    
+    <!-- 基金排名所要用到的值 -->
+    <string name="FundReportActivity_FundReport_ActivityLabel">基金排名</string>
+    <string name="FundReportActivity_BaseInfo_TextView">基金简称/代码/最新日期</string>
+    <string name="FundReportActivity_LastJz_TextView">最新净值</string>
+    <string name="FundReportActivity_JzIncrease_TextView">涨跌幅</string>
+    
+    <string name="FundReportActivity_jjjcAndDm_ListHead">基金简称/代码</string>
+    <string name="FundReportActivity_tzlx_ListHead">投资类型</string>
+    <string name="FundReportActivity_zxrq_ListHead">最新日期</string>
+    <string name="FundReportActivity_zxjz_ListHead">最新净值</string>
+    <string name="FundReportActivity_rzd_ListHead">日涨跌</string>
+    <string name="FundReportActivity_ljjz_ListHead">累计净值</string>
+    <string name="FundReportActivity_rzf_ListHead">日涨幅</string>
+    <string name="FundReportActivity_tlxpm_ListHead">同类型排名</string>
+    <string name="FundReportActivity_zpm_ListHead">总排名</string>
+    <string name="FundReportActivity_sqrq_ListHead">上期日期</string>
+    <string name="FundReportActivity_sqjz_ListHead">上期净值</string>
+    <string name="FundReportActivity_sqljjz_ListHead">上期累计净值</string>
+    <string name="FundReportActivity_zzf_ListHead">周涨幅</string>
+    <string name="FundReportActivity_zzftlxpm_ListHead">周涨幅同类型排名</string>
+    <string name="FundReportActivity_zzfzpm_ListHead">周涨幅总排名</string>
+    <string name="FundReportActivity_yzf_ListHead">月涨幅</string>
+    <string name="FundReportActivity_yzftlxpm_ListHead">月涨幅同类型排名</string>
+    <string name="FundReportActivity_yzfzpm_ListHead">月涨幅总排名</string>
+    <string name="FundReportActivity_jdzf_ListHead">季度涨幅</string>
+    <string name="FundReportActivity_jdzftlxpm_ListHead">季度涨幅同类型排名</string>
+    <string name="FundReportActivity_jdzfzpm_ListHead">季度涨幅总排名</string>
+    <string name="FundReportActivity_bnzf_ListHead">半年涨幅</string>
+    <string name="FundReportActivity_bnzftlxpm_ListHead">半年涨幅同类型排名</string>
+    <string name="FundReportActivity_bnzfzpm_ListHead">半年涨幅总排名</string>
+    <string name="FundReportActivity_ynzf_ListHead">一年涨幅</string>
+    <string name="FundReportActivity_ynzftlxpm_ListHead">一年涨幅同类型排名</string>
+    <string name="FundReportActivity_ynzfzpm_ListHead">一年涨幅总排名</string>
+    <string name="FundReportActivity_jnzf_ListHead">今年涨幅</string>
+    <string name="FundReportActivity_jnzftlxpm_ListHead">今年涨幅同类型排名</string>
+    <string name="FundReportActivity_jnzfzpm_ListHead">今年涨幅总排名</string>
+    <string name="FundReportActivity_lnzf_ListHead">两年涨幅</string>
+    <string name="FundReportActivity_lnzftlxpm_ListHead">两年涨幅同类型排名</string>
+    <string name="FundReportActivity_lnzfzpm_ListHead">两年涨幅总排名</string>
+    <string name="FundReportActivity_snzf_ListHead">三年涨幅</string>
+    <string name="FundReportActivity_snzftlxpm_ListHead">三年涨幅同类型排名</string>
+    <string name="FundReportActivity_snzfzpm_ListHead">三年涨幅总排名</string>
+    <string name="FundReportActivity_wnzf_ListHead">五年涨幅</string>
+    <string name="FundReportActivity_wnzftlxpm_ListHead">五年涨幅同类型排名</string>
+    <string name="FundReportActivity_wnzfzpm_ListHead">五年涨幅总排名</string>
+    
+    
+    <!-- 自选基金 -->
+    <string name="SelfCheckFundActivity_FundReport_ActivityLabel">自选基金</string>
+    
+    <!-- 基金搜索所要用到的值 -->
+    <string name="SearchActivity_Search_ActivityLabel">基金搜索</string>
+    <string name="SearchActivity_Search_Btn">搜索</string>
+    <string name="SearchActivity_Hint_EditView">基金代码、基金简称</string>
+    <string name="SearchActivity_HelpInfo_TextView">\t您可以输入基金代码，基金简称来搜索</string>
+    
+    <string name="jjjzsChartDate">日期</string>
+    <string name="jjjzs_Chart_Fqjz">复权净值</string>
+    
+    
+    <string name="main_fund_netvalue">净值排名</string>
+    <string name="main_zxjj">基金搜索</string>
+    <string name="main_myfund">自选基金</string>
+    <string name="main_news_inform">新闻资讯</string>
+    <string name="main_more">更多</string>
+    
+    <string name="LoginActivity_ActivityLabel_TextView">用户登录</string>
+    <string name="LoginActivity_Account_TextView">用户名:</string>
+    <string name="LoginActivity_Password_TextView">密码:</string>
+    <string name="LoginActivity_Login_Button">登录</string>
+    <string name="LoginActivity_Reset_Button">重置</string>
+    <string name="LoginActivity_Register_Button">注册</string>
+</resources>

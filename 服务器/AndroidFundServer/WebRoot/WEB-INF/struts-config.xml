@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="jjjzForm" type="com.chenjun.struts.form.JjjzForm" />
+    <form-bean name="jjgkForm" type="com.chenjun.struts.form.JjgkForm" />
+    <form-bean name="jjfhForm" type="com.chenjun.struts.form.JjfhForm" />
+    <form-bean name="jjcfForm" type="com.chenjun.struts.form.JjcfForm" />
+    <form-bean name="jjgsForm" type="com.chenjun.struts.form.JjgsForm" />
+    <form-bean name="jjBaseInfoForm" type="com.chenjun.struts.form.JjBaseInfoForm" />
+    <form-bean name="searchForm" type="com.chenjun.struts.form.SearchForm" />
+    <form-bean name="fundreportForm" type="com.chenjun.struts.form.FundreportForm" />
+    <form-bean name="loginForm" type="com.chenjun.struts.form.LoginForm" />
+    <form-bean name="addSelfCheckFundForm" type="com.chenjun.struts.form.AddSelfCheckFundForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      attribute="jjjzForm"
+      input="/jjjzsTestJsp.jsp"
+      name="jjjzForm"
+      path="/jjjz"
+      scope="request"
+      type="com.chenjun.struts.action.JjjzAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="jjgkForm"
+      input="/jjgkTestJsp.jsp"
+      name="jjgkForm"
+      path="/jjgk"
+      scope="request"
+      type="com.chenjun.struts.action.JjgkAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="jjfhForm"
+      input="/jjfhTestJsp.jsp"
+      name="jjfhForm"
+      path="/jjfh"
+      scope="request"
+      type="com.chenjun.struts.action.JjfhAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="jjcfForm"
+      input="/jjcfTestJsp.jsp"
+      name="jjcfForm"
+      path="/jjcf"
+      scope="request"
+      type="com.chenjun.struts.action.JjcfAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="jjgsForm"
+      input="/JjgsTestJsp.jsp"
+      name="jjgsForm"
+      path="/jjgs"
+      scope="request"
+      type="com.chenjun.struts.action.JjgsAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="jjBaseInfoForm"
+      input="/jjBaseInfoTestJsp.jsp"
+      name="jjBaseInfoForm"
+      path="/jjBaseInfo"
+      scope="request"
+      type="com.chenjun.struts.action.JjBaseInfoAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="searchForm"
+      input="/searchTestJsp.jsp"
+      name="searchForm"
+      path="/search"
+      scope="request"
+      type="com.chenjun.struts.action.SearchAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="fundreportForm"
+      input="/fundreportTestJsp.jsp"
+      name="fundreportForm"
+      path="/fundreport"
+      scope="request"
+      type="com.chenjun.struts.action.FundreportAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="loginForm"
+      input="/loginTestJsp.jsp"
+      name="loginForm"
+      path="/login"
+      scope="request"
+      type="com.chenjun.struts.action.LoginAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="addSelfCheckFundForm"
+      input="/addSelfCheckFundTestJsp.jsp"
+      name="addSelfCheckFundForm"
+      path="/addSelfCheckFund"
+      scope="request"
+      type="com.chenjun.struts.action.AddSelfCheckFundAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+
+  </action-mappings>
+
+  <message-resources parameter="com.chenjun.struts.ApplicationResources" />
+</struts-config>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView android:id="@+id/element_Key"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="left" android:textSize="20dp" android:textColor="#FFD700"
+		android:layout_weight="1" android:text="@string/JjfhActivity_ggrq_Key_TextView" />
+	<TextView android:id="@+id/element_Value"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="left" android:textSize="20dp" android:layout_weight="1" />
+
+</LinearLayout>

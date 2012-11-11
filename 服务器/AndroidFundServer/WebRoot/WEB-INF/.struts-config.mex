@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/jjjz.do" location="50,50" dimension="243,104" />
+  <StrutsActivity path="/jjgk.do" location="650,50" dimension="249,104" />
+  <StrutsActivity path="/jjfh.do" location="50,250" dimension="245,104" />
+  <StrutsActivity path="/jjcf.do" location="650,250" dimension="244,104" />
+  <StrutsActivity path="/jjgs.do" location="45,375" dimension="248,104" />
+  <StrutsActivity path="/jjBaseInfo.do" location="950,450" dimension="285,104" />
+  <StrutsActivity path="/search.do" location="350,550" dimension="265,104" />
+  <StrutsActivity path="/fundreport.do" location="50,750" dimension="291,104" />
+  <StrutsActivity path="/login.do" location="950,850" dimension="258,104" />
+  <StrutsActivity path="/jjjzsTestJsp.jsp" location="420,60" dimension="121,53" />
+  <StrutsActivity path="/jjgkTestJsp.jsp" location="975,60" dimension="121,53" />
+  <StrutsActivity path="/jjfhTestJsp.jsp" location="405,270" dimension="117,53" />
+  <StrutsActivity path="/jjcfTestJsp.jsp" location="950,250" dimension="116,53" />
+  <StrutsActivity path="/JjgsTestJsp.jsp" location="360,390" dimension="122,53" />
+  <StrutsActivity path="/jjBaseInfoTestJsp.jsp" location="50,550" dimension="157,53" />
+  <StrutsActivity path="/searchTestJsp.jsp" location="950,650" dimension="138,53" />
+  <StrutsActivity path="/fundreportTestJsp.jsp" location="650,750" dimension="163,53" />
+  <StrutsActivity path="/loginTestJsp.jsp" location="50,950" dimension="129,53" />
+  <StrutsActivity path="/addSelfCheckFund.do" location="350,950" dimension="334,104" />
+  <StrutsActivity path="/addSelfCheckFundTestJsp.jsp" location="950,1050" dimension="207,53" />
+  <StrutsTransition id="/searchTestJsp.jsp,null,/search.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1019,650" />
+      <AbsolutePoint location="1019,602" />
+      <AbsolutePoint location="615,602" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jjjzsTestJsp.jsp,null,/jjjz.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="420,86" />
+      <AbsolutePoint location="293,86" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/loginTestJsp.jsp,null,/login.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="114,950" />
+      <AbsolutePoint location="114,902" />
+      <AbsolutePoint location="950,902" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jjgkTestJsp.jsp,null,/jjgk.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="975,86" />
+      <AbsolutePoint location="899,86" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addSelfCheckFundTestJsp.jsp,null,/addSelfCheckFund.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1053,1050" />
+      <AbsolutePoint location="1053,1002" />
+      <AbsolutePoint location="684,1002" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jjcfTestJsp.jsp,null,/jjcf.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,276" />
+      <AbsolutePoint location="894,276" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jjfhTestJsp.jsp,null,/jjfh.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="405,302" />
+      <AbsolutePoint location="295,302" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/JjgsTestJsp.jsp,null,/jjgs.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="360,427" />
+      <AbsolutePoint location="293,427" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/fundreportTestJsp.jsp,null,/fundreport.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,776" />
+      <AbsolutePoint location="341,776" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/jjBaseInfoTestJsp.jsp,null,/jjBaseInfo.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="128,550" />
+      <AbsolutePoint location="128,502" />
+      <AbsolutePoint location="950,502" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

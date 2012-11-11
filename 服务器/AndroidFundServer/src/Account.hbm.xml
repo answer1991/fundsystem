@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<class name="com.chenjun.dao.bean.Account" table="Account">
+	
+		<id name="id" column="id" type="string">
+			<generator class="uuid"></generator>
+		</id>
+		
+		<property name="username" type="string">
+			<column name="username"></column>
+		</property>
+		
+		<property name="password" type="string">
+			<column name="password"></column>
+		</property>
+		
+		<set name="selfCheckJjs" table="SelfCheckJj" cascade="save-update" inverse="true" lazy="false">
+			<!-- 这里inverse 设置true的话，只有对方才能插入多对多的表中的关联关系-->
+			<key column="account_id"></key>
+			<one-to-many class="com.chenjun.dao.bean.SelfCheckJj"></one-to-many>
+		</set>
+	</class>
+
+</hibernate-mapping>

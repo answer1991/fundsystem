@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <!-- Activity头部 -->
+  <LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="10"
+		android:orientation="horizontal" android:background="@drawable/head">
+		<TextView android:layout_margin="5dp" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:layout_weight="1" android:textSize="20dp" android:textColor="@android:color/white"
+			android:text="@string/LoginActivity_ActivityLabel_TextView" />
+	</LinearLayout>
+    
+    
+    <!-- 内容 -->
+    <LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:orientation="vertical">
+    
+    <!-- 账号 -->
+    <LinearLayout android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+  		android:layout_height="wrap_content">
+  		
+    	<TextView android:layout_weight="3"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/LoginActivity_Account_TextView"/>
+    	
+    	<EditText android:id="@+id/login_activity_Account_EditText"
+    	android:layout_weight="1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	/>
+    	
+    </LinearLayout>
+    
+    <!-- 密码 -->
+    <LinearLayout android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+  		android:layout_height="wrap_content">
+  		
+    	<TextView android:layout_weight="3"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/LoginActivity_Password_TextView"/>
+    	
+    	<EditText android:id="@+id/login_activity_Password_EditText"
+    	android:layout_weight="1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:password="true"
+    	/>
+    	
+    </LinearLayout>
+    
+    <!-- 按钮 -->
+    <LinearLayout android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+  		android:layout_height="wrap_content">
+  		
+    	<Button android:id="@+id/login_activity_loginBtn"
+    	android:layout_weight="1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/LoginActivity_Login_Button"
+    	></Button>
+    	
+    	<Button android:id="@+id/login_activity_resetBtn"
+    	android:layout_weight="1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/LoginActivity_Reset_Button"
+    	></Button>
+    	
+    	<Button android:id="@+id/login_activity_registerBtn"
+    	android:layout_weight="1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/LoginActivity_Register_Button"
+    	></Button>
+    	
+    </LinearLayout>
+    
+   	</LinearLayout>
+    
+</LinearLayout>
