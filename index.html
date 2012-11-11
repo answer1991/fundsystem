@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Fundsystem : 基于Android的基金投资分析系统" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Fundsystem</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/answer1991/fundsystem">View on GitHub</a>
+
+          <h1 id="project_title">Fundsystem</h1>
+          <h2 id="project_tagline">基于Android的基金投资分析系统</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/answer1991/fundsystem/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/answer1991/fundsystem/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <hr><h3>服务器：</h3>
+
+<p>服务器主要使用J2EE + MySQL。使用Struts，Hibernate，Spring，Gson等框架。</p>
+
+<ul>
+<li>Struts实现MVC，派发各种请求到相应的逻辑处理模块</li>
+<li>Hibernate作为JPI的实现，</li>
+<li>Spring主要使用了ioc容器。</li>
+<li>Gson能将JavaBean序列化正确的成字符串。</li>
+</ul><hr><h3>Android客户端：</h3>
+
+<ul>
+<li>Android客户端的界面模仿了“新浪微博”（ActivityGroup，底部导航按钮到各个Activity）。我重构了ActivityGroup，抛弃了TabActivity（“新浪微博”使用的是TabActivity），使得重用性和性能得以提高。<a href="http://www.cnblogs.com/answer1991/archive/2012/05/08/2489844.html">详细的实现</a>
+</li>
+<li>使用HttpClient请求数据，使用线程池和Android内置的Handler实现异步处理。<a href="http://www.cnblogs.com/answer1991/archive/2012/04/22/2464524.html">详细的实现</a>
+</li>
+<li>客户端做了数据缓存处理（Sqlite），对于已经请求不会做重复请求。</li>
+</ul><hr><h3>不足之处：</h3>
+
+<p>由于时间紧迫，没有做以下的优化</p>
+
+<ul>
+<li>安全性问题，没有权限验证，整个Web Service都是开放的。可以考虑用OAuth。</li>
+<li>性能问题，服务器没有做负载均很和分布式的处理，用户数量大可能会导致崩溃。</li>
+</ul><hr><h3>运行效果图：</h3>
+
+<ul>
+<li><img src="http://pic.yupoo.com/answer1991/CppEKaoB/bIgKM.jpg" alt="运行图"></li>
+<li><img src="http://pic.yupoo.com/answer1991/CppEJXLK/a7bE4.jpg" alt="运行图"></li>
+<li><img src="http://pic.yupoo.com/answer1991/CppEKkJ7/JoXVK.jpg" alt="运行图"></li>
+<li><img src="http://pic.yupoo.com/answer1991/CppEK1eW/14K5i5.jpg" alt="运行图"></li>
+<li><img src="http://pic.yupoo.com/answer1991/CppEJDOg/9qlbk.jpg" alt="运行图"></li>
+<li><img src="http://pic.yupoo.com/answer1991/CppEJPDn/mQ6td.jpg" alt="运行图"></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Fundsystem maintained by <a href="https://github.com/answer1991">answer1991</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
